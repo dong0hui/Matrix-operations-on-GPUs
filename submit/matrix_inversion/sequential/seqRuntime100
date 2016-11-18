@@ -1,0 +1,6 @@
+INVERSE OF NON-SINGULAR MATRIX BY GAUSS-JORDAN ELIMINATION METHOD
+
+ Elements are too small to deal with !!!CPU Time - inverse:
+90ms£¡
+sh: pause: command not found
+Successful!The inverse of the non-singular matrix can be saw in inverse.txt

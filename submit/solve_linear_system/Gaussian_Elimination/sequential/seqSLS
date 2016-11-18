@@ -1,0 +1,15 @@
+#!/bin/bash
+##SBATCH -J lu1
+#SBATCH -o seqSLSRuntime       # output and error file name (%j expands to jobID)
+#SBATCH -n 1              # total number of mpi tasks requested
+#SBATCH -p development     # queue (partition) -- normal, development, etc.
+#SBATCH -t 02:00:00        # run time (hh:mm:ss) - 20 seconds
+#SBATCH -A EE-382C-EE361C-Multi
+#SBATCH --mail-user=donghui@utexas.edu # replace by your email
+#SBATCH --mail-type=begin  # email me when the job starts
+#SBATCH --mail-type=end    # email me when the job finishes
+./seqSLS.out 5
+./seqSLS.out 100
+./seqSLS.out 500
+./seqSLS.out 1000
+./seqSLS.out 2000
